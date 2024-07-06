@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="no.css">
+</head>
+<body>
+    <div class="hero">
+    <div id="header">
+        <h2 class="logo">HOSTELHUB FUNAAB</h2>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+            </ul> 
+        </div>
+
+    </div>
+    <div class="main">
+        <div id="top">
+            <h2 id="message">Single Room at Oluwo FUNAAB</h2>
+            <h4>Newly completed self-con right at Harmony estate</h4>
+        </div>
+    </div>
+</div>
+    <h3 class="ga">GALLERY</h3>
+    <div class="img-gallery">
+        <img src="f.jpg" onclick="openFullImg(this.src)">
+        <img src="g.jpg" onclick="openFullImg(this.src)">
+        <img src="y.jpg" onclick="openFullImg(this.src)">
+        <img src="h.jfif"onclick="openFullImg(this.src)">
+        <img src="f.jpg" onclick="openFullImg(this.src)">
+        <img src="f.jpg" onclick="openFullImg(this.src)">
+        <img src="f.jpg" onclick="openFullImg(this.src)">
+        <img src="f.jpg" onclick="openFullImg(this.src)">
+    </div>
+    <div class="mainn">
+        <p>Specifications<p><h5>Unlock a world of comfort at this self-con ( A room and a parlour) <br>
+            with external kitchen the life changer trhkig fdfuuuiufg vcdekk <br>daeac nhyt 
+            hhio ohio in the beginning of time the bing bang theory te let there be light theory
+        </h5>
+        <p>Distance</p><h5>About 1.5km from school gate <br> 5 Minutes drive <br> 12 Minutes walking distance
+        </h5>
+        <p>Price</p><h5>$1200</h5>
+        <button onclick="redirectToWhatsApp()">Contact</button>
+    </div>
+
+    <div class="full-img" id="fullImgBox">  
+        <img src="f.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+   
+
+    <div class="map">
+        <h2>Location: Google Maps</h2>
+        <p class="mapp">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31666.07073438179!2d3.425161204574215!3d7.211285138828045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a49f2073bd6ab%3A0x8ed091919b8b5bb6!2sFEDERAL%20UNIVERSITY%20OF%20AGRICULTURE%20ABEOKUTA!5e0!3m2!1sen!2sng!4v1714303731417!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function redirectToWhatsApp() {
+            // Get the content of the h2 element
+            const messageElement = document.getElementById('message');
+            
+            // Check if the h2 element exists and contains a message
+            if (messageElement && messageElement.innerText.trim() !== "") {
+                const message = messageElement.innerText;
+                
+                // Encode the message to be URL-safe
+                const encodedMessage = encodeURIComponent(message);
+                
+                // Define the WhatsApp URL with the pre-filled message
+                const whatsappUrl = `https://wa.me/2349048938219?text=${encodedMessage}`;
+                
+                // Redirect to the WhatsApp URL
+                window.location.href = whatsappUrl;
+            } else {
+                alert("The message element is empty or does not exist.");
+            }
+        }
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none"; 
+        }
+
+    </script>
+</body>
+</html>
