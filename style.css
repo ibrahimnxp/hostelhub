@@ -124,7 +124,7 @@ body {
     height: 400px;
     width: 100%;
     background-position: bottom 25% rigth 0; 
-    background-size: contain;  
+    background-size: cover;  
 }
 
 #heroo {
