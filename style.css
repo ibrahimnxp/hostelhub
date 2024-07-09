@@ -17,7 +17,7 @@ h1 {
 h2 {
     font-size: 30px;
     line-height: 34px;
-    color: rgb(120, 165, 216);
+    color: rgb(102, 235, 245);
 }
 #heroo button a {
     text-decoration: none;
@@ -91,7 +91,7 @@ body {
 
 #navbar li a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     color: white;
     transition: 0.3s ease;
