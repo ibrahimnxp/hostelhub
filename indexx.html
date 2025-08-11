@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="body">
+        <header>
+             <div class="logo">Hostelhub</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="https://wa.me/2348076541422">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">&#9776;</div>
+        </header>
+
+        <section class="hero">
+            <div class="content">
+                <h1>Work in  <span>Progress</span> <br>Come Back Soon!</h1>
+                <p>A simple and easy way to connect with students looking for roommates</p>
+            </div>
+            <div class="buttons">
+                <!-- <a href="roommates.html" class="btn primary">Browse Available Roommates</a> -->
+                <!-- <a href="form.html" class="btn secondary">Still Searching? List Yourself Here</a> -->
+            </div>
+        </section>
+    </div>
+
+        <!-- <div class="how-it-works" id="about"> -->
+            <!-- <h2>How It Works</h2> -->
+            <!-- <ul> -->
+                <!-- <li>1️⃣ Browse the list of students looking for roommates.</li> -->
+                <!-- <li>2️⃣ Choose a roommate based on your preferences.</li> -->
+                <!-- <li>3️⃣ Contact them directly to finalize arrangements.</li> -->
+                <!-- <li>4️⃣ If you don't find a suitable roommate, click "List Yourself Here" to submit your details.</li> -->
+                <!-- <li>5️⃣ Your listing will be added, making it easier for others to find you.</li> -->
+            <!-- </ul> -->
+        <!-- </div> -->
+    
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostelhub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <header>
+             <div class="logo">Hostelhub</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="https://wa.me/2348076541422">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">&#9776;</div>
+        </header>
+
+        <section class="hero">
+            <div class="content">
+                <h1>Your Next <span>Stay</span> Starts<br> Here</h1>
+                <p> Let us help you find the right Place or Person.</p>
+            </div>
+            <div class="buttons">
+                <a href="hostel.html" class="btn primary">Browse Available Hostels</a>
+                <a href="indexx.html" class="btn secondary">Find a Roommate</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

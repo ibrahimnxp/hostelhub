@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Listings</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="bg">
+    <header>
+        <div class="logo">Hostelhub</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger">&#9776;</div>
+</header>
+  <div class="container">
+    <h1>Available Hostels</h1>
+
+    <div id="heroo">
+        <h2>Find your safe haven</h2>
+    </div>
+
+    <div class="filters">
+      <select id="type">
+        <option value="">Type</option>
+        <option value="self con">Self Con</option>
+        <option value="single room">Single Room</option>
+        <option value="other">Other</option>
+      </select>
+
+      <select id="location">
+        <option value="">Location</option>
+        <option value="camp">Camp</option>
+        <option value="isolu">Isolu</option>
+        <option value="harmony">Harmony</option>
+        <option value="kofesu">Kofesu</option>
+        <option value="gate">Gate</option>
+        <option value="oluwo">Oluwo</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="number" id="minPrice" placeholder="Min Price" />
+      <input type="number" id="maxPrice" placeholder="Max Price" />
+      <button onclick="applyFilters()">Filter</button>
+    </div>
+  </div>
+    </div>
+
+    <div class="hostel-listing" id="hostelList">
+      <!-- Example hostel listings -->
+      <div class="hostel" data-type="self con" data-location="camp" data-price="150000">
+        <h3>Self Con at Camp</h3>
+        <p>Price: 150,000</p>
+      </div>
+
+      <div class="hostel" data-type="single room" data-location="gate" data-price="80000">
+        <h3>Single Room at Gate</h3>
+        <p>Price: 80,000</p>
+      </div>
+
+      <div class="hostel" data-type="other" data-location="oluwo" data-price="60000">
+        <h3>Room at Oluwo</h3>
+        <p>Price: 60,000</p>
+      </div>
+
+      <!-- Add more hostel blocks dynamically if needed -->
+    </div>
+  </div>
+
+  <script>
+    function applyFilters() {
+      const type = document.getElementById('type').value.toLowerCase();
+      const location = document.getElementById('location').value.toLowerCase();
+      const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
+      const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
+
+      const hostels = document.querySelectorAll('.hostel');
+      hostels.forEach(hostel => {
+        const hostelType = hostel.dataset.type.toLowerCase();
+        const hostelLocation = hostel.dataset.location.toLowerCase();
+        const hostelPrice = parseInt(hostel.dataset.price);
+
+        const matchesType = !type || hostelType === type;
+        const matchesLocation = !location || hostelLocation === location;
+        const matchesPrice = hostelPrice >= minPrice && hostelPrice <= maxPrice;
+
+        if (matchesType && matchesLocation && matchesPrice) {
+          hostel.style.display = 'block';
+        } else {
+          hostel.style.display = 'none';
+        }
+      });
+    }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Listings</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="https://kit.fontawesome.com/4b31caabb3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg">
+    <header>
+        <div class="logo">Hostelhub</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://wa.me/2348076541422">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger">&#9776;</div>
+</header>
+  <div class="container">
+    <h1>Available Hostels</h1>
+
+    <div id="heroo">
+        <h2>Find your safe haven</h2>
+    </div>
+
+    <div class="filters">
+      <select id="type">
+        <option value="">Type</option>
+        <option value="self con">Self Con</option>
+        <option value="single room">Single Room</option>
+        <option value="room and parlor">Room and Parlor</option>
+        <option value="other">Other</option>
+      </select>
+
+      <select id="location">
+        <option value="">Location</option>
+        <option value="camp">Camp</option>
+        <option value="isolu">Isolu</option>
+        <option value="harmony">Harmony</option>
+        <option value="kofesu">Kofesu</option>
+        <option value="gate">Gate</option>
+        <option value="oluwo">Oluwo</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="number" id="minPrice" placeholder="Min Price i.e 100000" />
+      <input type="number" id="maxPrice" placeholder="Max Price i.e 200000" />
+      <button onclick="applyFilters()">Filter</button>
+      <a class="explore" href="#explore"><button>Explore All</button></a>
+    </div>
+    
+  </div>
+    </div>
+
+
+    <div id="explore">
+    <div class="hostel-listing" id="hostelList">
+      <!-- Example hostel listings -->
+
+      <div id="product1" class="section-p1">
+        <div class="pro-container">
+           <div class="hostel" data-type="Self Con" data-location="kofesu" data-price="235000">
+            <div class="pro">
+              <video width="170" height="150" controls>
+                <source src="1.mp4" type="video/mp4">
+              </video>
+              <div class="des">
+                <span>hostelhub</span>
+                <h5>ROOM SELF CON</h5>
+                <p>KOFESU</p>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h4>Price: 235K TOTAL</h4>
+              <a href="1.html"><button><h3>View</h3></button></a>
+            </div>
+            </div>
+          </div>  
+
+
+
+           
+            <div class="hostel" data-type="single Room" data-location="oluwo" data-price="95000">
+              <div class="pro">
+              <video width="170" height="150" controls>
+                <source src="2.mp4" type="video/mp4">
+              </video>
+            <div class="des">
+                <span>hostelhub</span>
+                <h5>SINGLE ROOM</h5>
+                <p>OLUWO</p>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h4>Price: TP 95K</h4>
+              <a href="2.html"><button><h3>View</h3></button></a>
+            </div>
+            </div>
+          </div> 
+          
+          
+
+          <div class="hostel" data-type="room and parlor" data-location="oluwo" data-price="550000">
+            <div class="pro">
+            <video width="170" height="150" controls>
+              <source src="3.mp4" type="video/mp4">
+            </video>
+          <div class="des">
+              <span>hostelhub</span>
+              <h5>POP ROOM AND PARLOR</h5>
+              <p>OLUWO</p>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>Price: 550k S.R</h4>
+            <a href="3.html"><button><h3>View</h3></button></a>
+          </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="hostel" data-type="single room" data-location="harmony" data-price="">
+          <div class="pro">
+          <video width="170" height="150" controls>
+            <source src="4.mp4" type="video/mp4">
+          </video>
+        <div class="des">
+            <span>hostelhub</span>
+            <h5>BIG SHOP</h5>
+            <p>HARMONY</p>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <h4>Price: #</h4>
+          <a href="4.html"><button><h3>View</h3></button></a>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="hostel" data-type="self con" data-location="other" data-price="300000">
+        <div class="pro">
+        <video width="170" height="150" controls>
+          <source src="5.mp4" type="video/mp4">
+        </video>
+      <div class="des">
+          <span>hostelhub</span>
+          <h5>POP SELFCON</h5>
+          <p>AGBEDE</p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h4>Price: 300K S.R</h4>
+        <a href="5.html"><button><h3>View</h3></button></a>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="hostel" data-type="room and parlor" data-location="camp" data-price="400000">
+      <div class="pro">
+      <video width="170" height="150" controls>
+        <source src="6.mp4" type="video/mp4">
+      </video>
+    <div class="des">
+        <span>hostelhub</span>
+        <h5>POP ROOM AND PARLOR</h5>
+        <p>CAMP</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <h4>Price: 400K TOTAL</h4>
+      <a href="6.html"><button><h3>View</h3></button></a>
+    </div>
+    </div>
+  </div>
+
+
+
+    <div class="hostel" data-type="self con" data-location="oluwo" data-price="280000">
+        <div class="pro">
+          <video width="170" height="150" controls>
+            <source src="7.mp4" type="video/mp4">
+          </video>
+  <div class="des">
+      <span>hostelhub</span>
+      <h5>ROOM SELFCON</h5>
+      <p>OLUWO</p>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <h4>Price: 280k TOTAL</h4>
+    <a href="7.html"><button><h3>View</h3></button></a>
+  </div>
+  </div>
+</div>
+
+
+          
+            <div class="hostel" data-type="self con" data-location="oluwo" data-price="250000">
+              <div class="pro"> 
+              <video width="170" height="150" controls>
+                <source src="8.mp4" type="video/mp4">
+              </video>
+            <div class="des">
+                <span>hostelhub</span>
+                <h5>ROOM SELFCON</h5>
+                <p>OLUWO</p>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h4>Price: 25OK RENT</h4>
+              <a href="8.html"><button><h3>View</h3></button></a>
+            </div>
+            </div>
+            </div>
+          
+        
+         
+
+
+
+
+
+      <div class="hostel" data-type="self con" data-location="kofesu" data-price="200000">
+        <div class="pro"> 
+        <video width="170" height="150" controls>
+          <source src="9.mp4" type="video/mp4">
+        </video>
+      <div class="des">
+          <span>hostelhub</span>
+          <h5>ROOM SELFCON</h5>
+          <p>KOFESU</p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h4>Price: 200K RENT</h4>
+        <a href="9.html"><button><h3>View</h3></button></a>
+      </div>
+      </div>
+    </div> 
+
+    <div class="hostel" data-type="self con" data-location="other" data-price="360000">
+      <div class="pro"> 
+      <video width="170" height="150" controls>
+        <source src="10.mp4" type="video/mp4">
+      </video>
+    <div class="des">
+        <span>hostelhub</span>
+        <h5>ROOM SELFCON</h5>
+        <p>ZOO</p>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <h4>Price: 36OK TOTAL</h4>
+      <a href="10.html"><button><h3>View</h3></button></a>
+    </div>
+    </div>
+  </div> 
+
+
+
+
+
+  <div class="hostel" data-type="self con" data-location="isolu" data-price="200000">
+    <div class="pro"> 
+    <video width="170" height="150" controls>
+      <source src="11.mp4" type="video/mp4">
+    </video>
+  <div class="des">
+      <span>hostelhub</span>
+      <h5>ROOM SELFCON</h5>
+      <p>ISOLU</p>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <h4>Price: 200K RENT</h4>
+    <a href="11.html"><button><h3>View</h3></button></a>
+  </div>
+  </div>
+</div> 
+
+
+
+
+
+<div class="hostel" data-type="self con" data-location="oluwo" data-price="200000">
+  <div class="pro"> 
+  <video width="170" height="150" controls>
+    <source src="12.mp4" type="video/mp4">
+  </video>
+<div class="des">
+    <span>hostelhub</span>
+    <h5>ROOM SELFCON</h5>
+    <p>OLUWO</p>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+  </div>
+  <h4>Price: 200K RENT</h4>
+  <a href="12.html"><button><h3>View</h3></button></a>
+</div>
+</div>
+</div> 
+
+
+
+
+
+
+
+<div class="hostel" data-type="room and parlor" data-location="camp" data-price="270000">
+  <div class="pro"> 
+  <video width="170" height="150" controls>
+    <source src="13.mp4" type="video/mp4">
+  </video>
+<div class="des">
+    <span>hostelhub</span>
+    <h5>ROOM AND PARLOR</h5>
+    <p>CAMP</p>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+  </div>
+  <h4>Price: 27OK RENT</h4>
+  <a href="13.html"><button><h3>View</h3></button></a>
+</div>
+</div>
+</div> 
+
+
+
+<div class="hostel" data-type="self con" data-location="harmony" data-price="350000">
+  <div class="pro"> 
+  <video width="170" height="150" controls>
+    <source src="14.mp4" type="video/mp4">
+  </video>
+<div class="des">
+    <span>hostelhub</span>
+    <h5>POP ROOM SELFCON</h5>
+    <p>HARMONY</p>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+  </div>
+  <h4>Price: 350K TOTAL</h4>
+  <a href="14.html"><button><h3>View</h3></button></a>
+</div>
+</div>
+</div> 
+
+
+
+
+<div class="hostel" data-type="self con" data-location="harmony" data-price="300000">
+  <div class="pro"> 
+  <video width="170" height="150" controls>
+    <source src="15.mp4" type="video/mp4">
+  </video>
+<div class="des">
+    <span>hostelhub</span>
+    <h5>POP ROOM SELFCON</h5>
+    <p>HARMONY</p>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+  </div>
+  <h4>Price: 300K RENT</h4>
+  <a href="15.html"><button><h3>View</h3></button></a>
+</div>
+</div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Add more hostel blocks dynamically if needed -->
+    
+    </div>
+  </div>
+
+  <script>
+    function applyFilters() {
+      const type = document.getElementById('type').value.toLowerCase();
+      const location = document.getElementById('location').value.toLowerCase();
+      const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
+      const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
+  
+      const hostels = document.querySelectorAll('.hostel');
+  
+      hostels.forEach(hostel => {
+        const hostelType = hostel.dataset.type?.toLowerCase() || '';
+        const hostelLocation = hostel.dataset.location?.toLowerCase() || '';
+        const hostelPrice = parseInt(hostel.dataset.price) || 0;
+  
+        const matchesType = (type === '' || type === 'all' || hostelType === type);
+        const matchesLocation = (location === '' || location === 'all' || hostelLocation === location);
+        const matchesPrice = hostelPrice >= minPrice && hostelPrice <= maxPrice;
+  
+        if (matchesType && matchesLocation && matchesPrice) {
+          hostel.style.display = 'block';
+        } else {
+          hostel.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  
+</body>
+</html>

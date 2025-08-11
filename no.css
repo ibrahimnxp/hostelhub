@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+      margin: 0;
+      color: white;
+      padding: 0;
+    background: rgba(34, 35, 37, 0.911)}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff7200;
+}
+
+.hero {
+    background-image: url(bg.jpg);
+    height: 300px;
+    width: 100%; 
+    background-position: bottom 25% rigth 0; 
+    background-size: cover;  
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff7200;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.faci {
+    width: 40%;
+    min-width: 300px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(4, 26, 124, 0.616);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    position: relative;
+    background-color: #007bff4f;
+}
+
+.dura {
+    width: 40%;
+    min-width: 300px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(4, 26, 124, 0.616);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    position: relative;
+    margin-top: 40px;
+    background-color: #007bff4f;
+}
+
+.pri {
+    width: 40%;
+    min-width: 300px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(4, 26, 124, 0.616);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    position: relative;
+    margin-top: 40px;
+    background-color: #007bff4f;
+}
+
+.pri button {
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    background-color: #088179bd ;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.faci button {
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    background-color: #088179bd ;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.img-gallery {
+    width: 80%;
+    margin: 70px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+h3 {
+    color: #ff7200;
+}
+h5 {
+    padding-top: 10px;
+}
